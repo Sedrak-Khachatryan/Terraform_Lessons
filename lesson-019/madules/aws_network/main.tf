@@ -8,12 +8,6 @@
 #   - XX NAT Gateways In Public Subnets to give access to Internet from Private Subnets
 #..........................................................
 
-provider "aws" {
-  region = "ap-southeast-1"
-}
-
-#==========================================================
-
 data "aws_availability_zones" "available" {}
 
 resource "aws_vpc" "main" {
